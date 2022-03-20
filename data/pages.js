@@ -1,14 +1,14 @@
 const pages = [
   {
-    input: './src/index/index.js',
+    input: './src/pages/index/index.js',
     output: 'index-index',
   },
   {
-    input: './src/about/index.js',
+    input: './src/pages/about/index.js',
     output: 'about-index',
   },
   {
-    input: './src/contact/index.js',
+    input: './src/pages/contact/index.js',
     output: 'contact-index',
   },
 ];

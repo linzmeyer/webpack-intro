@@ -7,3 +7,8 @@ import { camelCase } from "lodash"; // index.js:2 Uncaught SyntaxError: Cannot u
   you should see the output as "helloWorld"
 */
 console.log( camelCase('hello world') );
+
+
+// import helper
+import { add } from "../../modules/helpers";
+console.log(add(2 + 5));
