@@ -1,9 +1,12 @@
-const path = require('path');
+const pages = require('./data/pages.js');
+
+
+let entry = {}
+for (const page of pages) {
+  entry[page.output] = page.input;
+}
+
 
 module.exports = {
-  entry: './src/index.js',  // codesplitting can be done here as entry: {entry1: '...', entry2: '...'}
-  output: {
-    filename: 'awesome.js',
-    path: path.resolve(__dirname, 'dist'),
-  }
+  entry: {...entry},  // code splitting per page
 };
